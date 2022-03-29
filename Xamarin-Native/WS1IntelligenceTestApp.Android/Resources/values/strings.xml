@@ -1,0 +1,23 @@
+﻿<resources>
+    <string name="app_name">WS1IntelligenceTestAppAndroid</string>
+    <string name="title_error">Error</string>
+    <string name="title_userflow">User Flows</string>
+    <string name="title_network">Network</string>
+    <string name="title_others">Others</string>
+    
+    <string name="trigger_crash">Trigger crash</string>
+    <string name="log_handled_exception">Log Handled Exception</string>
+    <string name="network_request">Log Network Request</string>
+    <string name="network_error">Log Network error</string>
+    <string name="log_breadcrumb">Log Breadcrumb</string>
+    <string name="log_username">Log User Name</string>
+    <string name="log_getOptout">Get Opt Out</string>
+    <string name="log_setOptout">Set Opt Out</string>
+    <string name="begin_user_flow">Begin Pay Userflow</string>
+    <string name="fail_user_flow">Fail Pay Userflow</string>
+    <string name="end_user_flow">End Pay Userflow</string>
+    <string name="cancel_user_flow">Cancel Pay Userflow</string>
+    <string name="log_location_sf">Update location to SF</string>
+    <string name="log_location_toronto">Update location to Toronto</string>
+    <string name="log_didCrashOnLastLoad">Did Crash on last load</string>
+</resources>

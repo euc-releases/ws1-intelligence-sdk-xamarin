@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button
+		android:text="@string/log_breadcrumb"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/logBreadcrumbButton" />
+    <Button
+		android:text="@string/log_username"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/setUserName" />
+	<Button
+		android:text="@string/log_getOptout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/getOptOutStatus" />
+	<Button
+		android:text="@string/log_setOptout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/setOptOutStatus" />
+	<Button
+		android:text="@string/log_location_sf"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/setlocation1" />
+	<Button
+		android:text="@string/log_location_toronto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/setlocation2" />
+	<Button
+		android:text="@string/log_didCrashOnLastLoad"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/didCrashOnlastLoad" />
+</LinearLayout>

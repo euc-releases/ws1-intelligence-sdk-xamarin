@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<!--<Button
+		android:text="@string/trigger_crash"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:id="@+id/triggerCrash" />
+
+	<Button
+		android:text="@string/log_handled_exception"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/triggerCrash"
+		android:id="@+id/logHandledException" />
+
+	<Button
+		android:text="@string/log_breadcrumb"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logHandledException"
+		android:id="@+id/logBreadcrumbButton" />
+
+	<Button
+		android:text="@string/begin_user_flow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logBreadcrumbButton"
+		android:id="@+id/logBeginUserFlow" />
+
+	<Button
+		android:text="@string/fail_user_flow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logBeginUserFlow"
+		android:id="@+id/logFailUserFlow" />
+
+
+	<Button
+		android:text="@string/end_user_flow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logFailUserFlow"
+		android:id="@+id/logEndUserFlow" />-->
+
+ <RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/bottom_navigation"/>
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/navigation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="0dp"
+		android:layout_marginStart="0dp"
+		android:background="?android:attr/windowBackground"
+		android:layout_alignParentBottom="true"
+		app:menu="@menu/navigation"
+		android:minWidth="25px"
+		android:minHeight="25px">
+	</com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
+</RelativeLayout>

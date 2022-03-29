@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+    x:Class="WS1Intelligence.Forms.TestApp.UserflowPage"
+    IconImageSource="userflows.png"
+	Title="User Flows">
+       <ListView x:Name="ListView"
+			  ItemsSource="{Binding Items}"
+			  ItemTapped="Handle_ItemTapped"
+			  CachingStrategy="RecycleElement"
+			  RowHeight="64">
+		<d:ListView.ItemsSource>
+			<x:Array Type="{x:Type x:String}">
+			</x:Array>
+		</d:ListView.ItemsSource>
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell StyleId="disclosure">
+					<Grid VerticalOptions="Center">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="20" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<Image
+							VerticalOptions="Center"
+							HorizontalOptions="Center"
+							Grid.Column="0"
+							Grid.Row="0"
+							Grid.RowSpan="2"
+							Source="" />
+						<Label
+							Grid.Column="1"
+							Grid.Row="0"
+							VerticalOptions="End"
+							VerticalTextAlignment="End"
+							FontAttributes="Bold"
+							Text="{Binding Title}"
+							d:Text="{Binding .}" />
+						<Label
+							Grid.Column="1"
+							Grid.Row="1"
+							VerticalOptions="Start"
+							VerticalTextAlignment="Start"
+							Text="{Binding Subtitle}"
+							d:Text="Subtitle" />
+					</Grid>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView> 
+</ContentPage>
