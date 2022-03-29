@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button
+		android:text="@string/begin_user_flow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logBreadcrumbButton"
+		android:id="@+id/logBeginUserFlow" />
+
+	<Button
+		android:text="@string/fail_user_flow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logBeginUserFlow"
+		android:id="@+id/logFailUserFlow" />
+
+
+	<Button
+		android:text="@string/end_user_flow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logFailUserFlow"
+		android:id="@+id/logEndUserFlow" />
+
+
+	<Button
+		android:text="@string/cancel_user_flow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_below="@id/logFailUserFlow"
+		android:id="@+id/logCancelUserFlow" />
+</LinearLayout>

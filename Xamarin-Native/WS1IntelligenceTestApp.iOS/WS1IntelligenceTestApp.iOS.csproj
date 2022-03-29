@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{370DC9A6-E683-4B07-9C7C-154557285113}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{f1d599d5-32e4-4ac3-bfce-fa91478e30e4}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WS1IntelligenceTestApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>WS1IntelligenceTestApp.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="SceneDelegate.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <Compile Include="NetworkViewController.cs" />
+    <Compile Include="NetworkViewController.designer.cs">
+      <DependentUpon>NetworkViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherViewController.cs" />
+    <Compile Include="OtherViewController.designer.cs">
+      <DependentUpon>OtherViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorsViewController.cs" />
+    <Compile Include="ErrorsViewController.designer.cs">
+      <DependentUpon>ErrorsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFlowsViewController.cs" />
+    <Compile Include="UserFlowsViewController.designer.cs">
+      <DependentUpon>UserFlowsViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Main.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\others.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\others.imageset\linea_6d%281%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\others.imageset\linea_6d%281%29_256.png" />
+    <ImageAsset Include="Assets.xcassets\userflows.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\userflows.imageset\First.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\userflows.imageset\linea_12a%280%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\userflows.imageset\linea_12a%280%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\network.imageset\linea_a7%282%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\linea_a7%282%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\.DS_Store" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\Default.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\Default%402x.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\Default-568h%402x.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\Default-Portrait.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\Default-Portrait%402x.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\error.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_128.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_256.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_48.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_12a%280%29_64.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_128.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_256.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_48.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_6d%281%29_64.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_128.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_256.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_48.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_a7%282%29_64.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_128.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_256.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_48.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_512.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\linea_cf%283%29_64.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\network.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\others.png" />
+    <ImageAsset Include="Assets.xcassets\network.imageset\Resources\userflows.png" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\linea_cf%283%29_1024.png" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\linea_cf%283%29_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="WS1Intelligence">
+      <Version>1.0.1-beta</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\others.imageset\" />
+    <Folder Include="Assets.xcassets\userflows.imageset\" />
+    <Folder Include="Assets.xcassets\network.imageset\" />
+    <Folder Include="Assets.xcassets\error.imageset\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
