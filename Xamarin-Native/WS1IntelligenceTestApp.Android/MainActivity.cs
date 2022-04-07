@@ -37,7 +37,7 @@ namespace WS1IntelligenceTestAppAndroid
             Com.Crittercism.App.Crittercism.SetLoggingLevel(loggingLevel: Com.Crittercism.App.Crittercism.LoggingLevel.Debug);
             Com.Crittercism.App.CrittercismConfig crittercismConfig = new Com.Crittercism.App.CrittercismConfig();
             crittercismConfig.RegionLookup = Com.Crittercism.App.Crittercism.Region.Staging;
-            Com.Crittercism.App.Crittercism.Initialize(this, "3b2758fac0314624b2aa236181bdc64a00555305", crittercismConfig);
+            Com.Crittercism.App.Crittercism.Initialize(this, "YOUR APP ID", crittercismConfig);
 
         }
 
