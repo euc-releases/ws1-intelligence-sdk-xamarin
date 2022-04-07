@@ -23,7 +23,7 @@ namespace WS1Intelligence.Forms.TestApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             WS1Intelligence.Forms.iOS.WS1Intelligence.SetLoggingLevel((int)WS1IntelligenceIOS.WS1Intelligence.WS1IntelligenceLoggingLevel.Verbose);
-            WS1Intelligence.Forms.iOS.WS1Intelligence.Init("077cf173e13f4f8cbae88b46d0b464fb00555305");
+            WS1Intelligence.Forms.iOS.WS1Intelligence.Init("YOUR APP ID");
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
