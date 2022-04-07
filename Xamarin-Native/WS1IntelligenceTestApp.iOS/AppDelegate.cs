@@ -18,7 +18,7 @@ namespace WS1IntelligenceTestApp.iOS
         public bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             WS1Intelligence.SetLoggingLevel(WS1Intelligence.WS1IntelligenceLoggingLevel.Verbose);
-            WS1Intelligence.Init("88e7be9e9078449cab7ed4f28a1fba0100555305");
+            WS1Intelligence.Init("YOUR APP ID");
 
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
