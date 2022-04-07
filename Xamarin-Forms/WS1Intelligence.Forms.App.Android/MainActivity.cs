@@ -33,7 +33,7 @@ namespace WS1Intelligence.Forms.TestApp.Droid
         {
             Android.WS1Intelligence.SetLoggingLevel(Android.WS1Intelligence.LogLevel.Verbose);
             Android.WS1Intelligence.region = Android.WS1Intelligence.RegionLookup.Staging;
-            Android.WS1Intelligence.Init(this, "3b2758fac0314624b2aa236181bdc64a00555305");
+            Android.WS1Intelligence.Init(this, "YUOR API ID");
         }
 
         private void exceptionHandling()
