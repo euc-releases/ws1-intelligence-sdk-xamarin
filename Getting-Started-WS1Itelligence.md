@@ -1,10 +1,6 @@
-﻿# VMware Workspace ONE Intelligence Xamarin Software Development Kit (WS1Intelligence SDK)
+﻿# Workspace ONE Intelligence Xamarin Software Development Kit (WS1Intelligence SDK)
 
 This plugin enables access to Workspace ONE Intelligence Xamarin SDK features for Xamarin Native applications for iOS and Android.
-
-# License
-
-By integrating or downloading the software development kit (SDK) you accept the [VMware License](https://vdc-download.vmware.com/vmwb-repository/dcr-public/77d50615-6a61-4704-be18-30e8d9bac6ac/75789b6e-1ae4-4716-ab46-c6ce48b155fe/VMware%20Workspace%20ONE%20Intelligence%20SDK%20Software%20Development%20Kit%20License%20Agreement.pdf)
 
 ## iOS Overview
 
@@ -18,11 +14,10 @@ In order to inject Workspace ONE Intelligence Xamarin SDK functionality into you
 * A Xamarin iOS app to integrate with the Workspace ONE Intelligence SDK
 ** If you do not have a suitable application, you can create a new application in Visual Studio and integrate the SDK into that.
 
-
 ### Installation
 ------------
 
-In your application Packages(Right Click)->Manage Nuget Package...->Seacrh WS1Intelligence->Select Latest Version->Add Package
+In your application Packages(Right Click)->Manage Nuget Package...->Search WS1Intelligence->Select Latest Version->Add Package
 
 ### iOS Implementation
 

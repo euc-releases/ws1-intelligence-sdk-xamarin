@@ -1,10 +1,6 @@
-﻿# VMware Workspace ONE Intelligence Xamarin Forms Software Development Kit (WS1Intelligence SDK)
+﻿# Workspace ONE Intelligence Xamarin Forms Software Development Kit (WS1Intelligence SDK)
 
 This plugin enables access to Workspace ONE Intelligence SDK features for Xamarin Forms applications for iOS and Android.
-
-# License
-
-By integrating or downloading the software development kit (SDK) you accept the [VMware License](https://vdc-download.vmware.com/vmwb-repository/dcr-public/77d50615-6a61-4704-be18-30e8d9bac6ac/75789b6e-1ae4-4716-ab46-c6ce48b155fe/VMware%20Workspace%20ONE%20Intelligence%20SDK%20Software%20Development%20Kit%20License%20Agreement.pdf)
 
 ## Installation
 
@@ -23,7 +19,7 @@ For Android platform along with Workspace SDK Forms package, add the below packa
 1. Xamarin.AndroidX.Preference
 2. Xamarin.Google.Android.Material
 
-##iOS
+## iOS
 ### Procedure
 
 The Workspace ONE Intelligence Xamarin SDK must be initialized by the host application prior to use. To do so, you must call an initialization function with your valid iOS and Android app ID.
@@ -53,7 +49,7 @@ For example like this:
 
 You should see subsequent messages in your application logs that confirms successful initialization.
 
-##Android
+## Android
 ### Procedure
 
 The Workspace ONE Intelligence Xamarin SDK must be initialized by the host application prior to use. To do so, you must call an initialization function with your valid iOS and Android app ID.
